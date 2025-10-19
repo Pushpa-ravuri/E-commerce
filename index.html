@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .navbar {
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .logo {
+            width:15%;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .navbar a {
+            color: white;
+            font-size: 2rem;
+            text-decoration: none;
+
+            padding: 10px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+
+        .parent-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 2%;
+            padding: 20px;
+        }
+
+        .card {
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 90%;
+        }
+
+        .card button {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            width: 30%;
+            cursor: pointer;
+            border: none;
+        }
+
+        @media (max-width:500px) {
+            .logo img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .navbar a {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="">
+            <img class="logo"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgQwlsIHCMcXtntrM2-km4wEJccKLxEhOHIw&s"
+                alt="">
+        </a>
+        <a href="">Home</a>
+        <a href="">Login</a>
+        <a href="">Products</a>
+        <a href="">Register</a>
+        <a href=""><i class="fa-solid fa-cart-arrow-down"></i></a>
+    </nav>
+    <div class="parent-container">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgJVRcIGOR84k5aApT7rWPugPAk8SNrGgnyQ&s"
+                alt="" />
+            <h2>Carrot</h2>
+            <p>This is about a card product information</p>
+            <button>Add</button>
+        </div>
+        <div class="card">
+            <img src="https://www.alimentarium.org/sites/default/files/media/image/2017-02/AL027-01_pomme_de_terre_0_0.jpg"
+                alt="" />
+            <h2>Potato</h2>
+            <p>This is about a card product information</p>
+            <button>Add</button>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Dr25eJjpZaJbVOBGk6Mg5QyfdSa7FMp88Q&s"
+                alt="" />
+            <h2>Tomato</h2>
+            <p>This is about a card product information</p>
+            <button>Add</button>
+        </div>
+        <div class="card">
+            <img src="https://www.mystore.in/s/62ea2c599d1398fa16dbae0a/656afe4f8084207920042557/beetroot-640x640.jpg"
+                alt="" />
+            <h2>Beetroot</h2>
+            <p>This is about a card product information</p>
+            <button>Add</button>
+        </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLopT2oKX7Njh1mX9cRkYwg2DiAR1DyGWWIA&s"
+                    alt="" />
+                <h2>Cucumber</h2>
+                <p>This is about a card product information</p>
+                <button>Add</button>
+            </div>
+            <div class="card">
+                <img src="https://png.pngtree.com/png-clipart/20241117/original/pngtree-green-cabbage-vegetable-clipart-illustration-png-image_17164446.png"
+                    alt="" />
+                <h2>Cabbage</h2>
+                <p>This is about a card product information</p>
+                <button>Add</button>
+            </div>
+            <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxuX6n-SQyu3dzKJ6HgzYsbpsFvuoKv4fmYQ&s"
+                            alt="" />
+                        <h2>Brinjal</h2>
+                        <p>This is about a card product information</p>
+                        <button>Add</button>
+            </div>
+            <div class="card">
+                    <img src="https://malabardirect.com/cdn/shop/products/drumstick.jpg?v=1601754737"
+                        alt="" />
+                    <h2>Drum Stick</h2>
+                    <p>This is about a card product information</p>
+                    <button>Add</button>
+            </div>
+            
+        </div>
+</body>
+
+</html>
